@@ -1,0 +1,36 @@
+{
+  "name": "opencartplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+
+ 
+  "scripts": {
+  "test:master" : "playwright test -- grep @master",
+  "test:sanity" : "playwright test --grep @sanity",
+  "test:regression" : "playwright test -- grep @regression",
+  "test:datadriven" : "playwright test -- grep @datadriven",
+  "test:master:headed" : "playwright test --grep @master --headed",
+  "test:sanity:debug" : "playwright test --grep @sanity --debug",
+  "final" : "playwright test --grep @master --worker 3 fullyparallel"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "allure-playwright": "^3.9.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "csv-parse": "^6.2.1",
+    "xlsx": "^0.18.5"
+  },
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  }
+}
