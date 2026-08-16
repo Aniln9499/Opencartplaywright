@@ -1,7 +1,2 @@
 // this is test files
-// this is test files
-// this is test files
-// this is test files
-// this is test files
-// this is test files
-// this is test files
+//Test Playwright
